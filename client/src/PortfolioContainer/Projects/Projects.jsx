@@ -34,8 +34,8 @@ export const Projects = (props) => {
                   <p> PortafolioApp se desarollo con Create React App y React versión 18.</p>          
                 </div>
                 <div className="d-flex mb-2 mx-2 justify-content-around">
-                  <a href="https://github.com/AlexisTemoche" target="_blank" rel="noreferrer" className="btn btn-link">Ir a la página</a>
-                  <a href="https://github.com/AlexisTemoche" target="_blank" rel="noreferrer" className="btn btn-link">Ir al repositorio</a>
+                  <a href="https://portafolio-app.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-link">Ir a la página</a>
+                  <a href="https://github.com/AlexisTemoche/PortafolioApp" target="_blank" rel="noreferrer" className="btn btn-link">Ir al repositorio</a>
                 </div>
                 <div className="client-info">
                   <img src={portafolio} alt="no internet connection"></img>
