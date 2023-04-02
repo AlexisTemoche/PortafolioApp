@@ -41,9 +41,9 @@ router.post( '/contact', async (req,res) => {
             refreshToken: REFRESH_TOKEN,
             accessToken: accessToken
         },
-        tls: {
-          rejectUnauthorized: false
-        }
+        // tls: {
+        //   rejectUnauthorized: false
+        // }
     });
 
     let mailOptions = {
