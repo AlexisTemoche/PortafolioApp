@@ -40,10 +40,7 @@ router.post( '/contact', async (req,res) => {
             clientSecret: CLIENT_SECRET,
             refreshToken: REFRESH_TOKEN,
             accessToken: accessToken
-        },
-        // tls: {
-        //   rejectUnauthorized: false
-        // }
+        }
     });
 
     let mailOptions = {
@@ -63,7 +60,6 @@ router.post( '/contact', async (req,res) => {
 
     smtTransporter.sendMail( mailOptions, (error) => {
         try {
-            console.log("entra aquí segundo => ", error);
             if(error) return res.status(400).json({msg: 'Por favor llene todos los campos'});
             res.status(200).json({msg: 'Gracias por contactar a Alexis'});
         } catch (error) {
